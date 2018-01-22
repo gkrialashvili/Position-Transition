@@ -1,0 +1,80 @@
+html, body {
+height: 100%;
+width: 100%;
+
+}
+.main-box {
+	width: 100%;
+	height:100%;
+	background-color: #22B573;
+	border: solid;
+}
+.menu nav ul li a{
+	color: white;
+	float: left;
+	margin: 20px;
+	font-size: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.box1 {
+	width: 560px;
+	height: 400px;
+	background-color: white;
+	position: absolute;
+	left: -6px;
+    bottom: -6px
+}
+/*Hover on white box*/
+.box1:hover .box2{
+	background-color: yellow;
+
+}
+.box1:hover .css-text{
+	color: red;
+	transform:translate(-50%,-50%);
+}
+.box1:hover .read{
+	color: red;
+}
+/*Hover on white box*/
+
+.box2 {
+	width: 250px;
+	height: 200px;
+	background-color: #006837;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	transition: 5s;
+}
+.css-text{
+	z-index: 20;
+	color: yellow;
+	text-transform: uppercase;
+	position: absolute;
+	font-size: 40px;
+	top: 50%;
+	left: 50%;
+	white-space: nowrap;
+	transform:translate(-50%,-50%) rotate(35deg);
+	transition: 5s;
+}
+.read{
+	color: green;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	transition: 5s;
+}
+.footer1 {
+	color: yellow;
+	position: absolute;
+	text-transform: uppercase;
+	bottom: 5px;
+	right: 5px;
+}
