@@ -28,7 +28,7 @@ width: 100%;
 	background-color: white;
 	position: absolute;
 	left: -6px;
-    bottom: -6px
+    bottom: -10px
 }
 /*Hover on white box*/
 .box1:hover .box2{
@@ -53,7 +53,7 @@ width: 100%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 10;
-	transition: 3s;
+	transition: 2s;
 }
 .css-text{
 	z-index: 20;
@@ -65,7 +65,7 @@ width: 100%;
 	left: 50%;
 	white-space: nowrap;
 	transform:translate(-50%,-50%) rotate(35deg);
-	transition: 3s;
+	transition: color 2s, transform 2s;
 }
 .read{
 	color: green;
@@ -74,7 +74,7 @@ width: 100%;
 	position: absolute;
 	bottom: 5px;
 	right: 5px;
-	transition: 3s;
+	transition: color 2s;
 }
 .footer1 {
 	color: yellow;
