@@ -9,7 +9,6 @@ width: 100%;
 	background-color: #22B573;
 	border: solid 5px;
 	border-color: #006837;
-
 }
 .clear {
 	clear: both;
@@ -21,6 +20,7 @@ width: 100%;
 	font-size: 50px;
 	text-decoration: none;
 	text-transform: uppercase;
+	animation: rot 3s;
 }
 .box1 {
 	width: 560px;
@@ -39,11 +39,26 @@ width: 100%;
 	color: red;
 	transform:translate(-50%,-50%);
 }
-.box1:hover .read{
+.box1:hover .read {
 	color: red;
 }
 /*Hover on white box*/
-
+/*key frame start*/
+@keyframes rot {
+	25% {font-size: 5px;}
+	50% {font-size: 10px;}
+	75% {font-size: 15px;}
+	100% {}
+} 
+@keyframes mymove {
+    0%   {bottom: 0px; right: 0px; color: red;}
+    25%  {bottom: 0px; right: 100px; color: blue;}
+    50%  {bottom: 100px; right: 100px; color: yellow;}
+    75%  {bottom: 100px; right: 0px; color: white;}
+    85% {bottom: 100px; right: -200px; color: purple;}
+    100% {bottom: 0px; right: -0px; color: red;}
+}
+/*key frame end*/
 .box2 {
 	width: 250px;
 	height: 200px;
@@ -82,4 +97,5 @@ width: 100%;
 	text-transform: uppercase;
 	bottom: 5px;
 	right: 5px;
+	animation: mymove 3s infinite;
 }
